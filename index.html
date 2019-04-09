@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/CSS">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <title>Red Social</title>
+</head>
+<body class="bg-primary">
+    <header class="bg-light border border-muted smbhd">
+        <div class="navbar">
+            <div class="col-2">
+                <img class="col-12" src="https://nesgroup.org/wp-content/uploads/2017/01/Total-logo-earth-768x576.png" alt="">
+            </div>
+            <h1 class="mxa text-center col-8">Titulo Principal</h1>
+            <div class="col-2 justify-center">
+                <div class="row col-12 text-center">
+                    <i class="mxa fab fa-twitter-square"></i>
+                    <i class="mxa fab fa-google"></i>
+                </div>
+                <div class="">
+                    <button class="col-6 btn-dark"><a class="text-light" href="register.html" >Register</a></button>
+                </div>
+                <button class="col-6 btn-dark">Enter</button>
+            </div>
+        </div>
+    </header>
+    <section class="p-0 m-0 col-12 row">
+        <article class="col-2 bg-light border border-muted m-0">
+            <nav class="col-12">
+                <div class="input-group pt-1 mb-2">
+                    <div class="input-group-prepend">
+                        <span class="bg-light input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="search" placeholder="search" class="col-12 form-control">
+                </div>
+                <h4 class="mb-0">
+                    <button class="btn-dark col-12 active">
+                        <a class="text-light" href="#">Home</a>
+                    </button>
+                </h4>
+                <h4 class="mb-0">
+                    <button class="btn-dark col-12">
+                        <a class="text-light" href="#">Contact</a>
+                    </button>
+                </h4>
+                <h4 class="mb-0">
+                    <button class="btn-dark col-12">
+                        <a class="text-light" href="#">About Us</a>
+                    </button>
+                </h4>
+                <h4 class="mb-0">
+                    <button class="btn-dark col-12">
+                        <a class="text-light" href="#">Profile</a>
+                    </button>
+                </h4>
+                <h4 class="mb-0">
+                    <button class="btn-dark col-12">
+                        <a class="text-light" href="#">Publications</a>
+                    </button>
+                </h4>
+            </nav>
+            <div class="container col-12">
+                <img class="col-12 border border-muted" src="https://st2.depositphotos.com/2498595/6618/v/950/depositphotos_66186969-stock-illustration-female-profile-outline-symbol-dark.jpg">
+                <h4 class="text-center">Name Surname</h4>
+                <div class="text-muted">
+                    <p class="col-12">Information</p>
+                    <p>text resume:</p>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </article>
+        <article class="col-10 container p-5">
+                <div class="navbar bg-light smbhd rounded col-12 mt-4">
+                        <div class="col-8">
+                            <div class="col-12 navbar">
+                                <div class="col-12">
+                                    <h3>Add a Post: </h3>
+                                    <input class="rounded col-12" type="text" placeholder="Post Tittle">
+                                    <p class="mt-2 text-muted">Post information:</p>
+                                </div>
+                                <div class="rounded col-12 container">
+                                <input class="rounded col-12" type="text" placeholder="Lorem Ipsum es simplemente el texto ...">
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-4">
+                            <img class="col-12" src="https://st2.depositphotos.com/2498595/6618/v/950/depositphotos_66186969-stock-illustration-female-profile-outline-symbol-dark.jpg" alt="">
+                        </div>
+                </div>
+            <div class="navbar bg-light smbhd rounded col-12 mt-4">
+                <div class="col-8">
+                    <div class="navbar">
+                        <div>
+                            <h3>Post: 1</h3>
+                            <p class="text-muted">Post information</p>
+                        </div>
+                        <div>
+                            <h5><i class="far text-muted fa-thumbs-up"> Like</i></h5>
+                            <h5><i class="far text-muted fa-comment"> Coment</i></h5>
+                        </div>
+                    </div>
+                    <div class="rounded bg-white border border-muted col-12 container">
+                        <p class="mt-2">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img class="col-12" src="https://st2.depositphotos.com/2498595/6618/v/950/depositphotos_66186969-stock-illustration-female-profile-outline-symbol-dark.jpg" alt="">
+                </div>
+            </div>
+            <div class="navbar bg-light smbhd rounded col-12 mt-4">
+                    <div class="col-8">
+                        <div class="navbar">
+                            <div>
+                                <h3>Post: 2</h3>
+                                <p class="text-muted">Post information</p>
+                            </div>
+                            <div>
+                                <h5><i class="far text-muted fa-thumbs-up"> Like</i></h5>
+                                <h5><i class="far text-muted fa-comment"> Coment</i></h5>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white border border-muted col-12 container">
+                            <p class="mt-2">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img class="col-12" src="https://st2.depositphotos.com/2498595/6618/v/950/depositphotos_66186969-stock-illustration-female-profile-outline-symbol-dark.jpg" alt="">
+                    </div>
+            </div>
+        </article>
+    </section>
+    <footer class="navbar bg-light border border-muted col-12 text-center">
+        <div class="col-4">
+            <i class="fas fa-envelope"></i>
+            <p class="text-muted">@mohaScript</p>
+        </div>
+        <div class="col-4">
+            <i class="fas fa-users"></i>
+            <p class="text-muted">Comunity</p>
+        </div>
+        <div class="col-4">
+            <i class="fas fa-phone"></i>
+            <p class="text-muted">+34 669 35 45 21</p>
+        </div>
+    </footer>
+</body>
+</html>
